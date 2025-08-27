@@ -3,15 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  { -- Colorscheme
-    'EdenEast/nightfox.nvim',
-    priority = 1000, -- High priority to load this before other plugins.
-    config = function()
-      -- Load the colorscheme
-      vim.cmd.colorscheme 'dayfox'
-    end,
-  },
-  { -- Select virtual env in Python
+  { -- Plugin to select a virtual env in Python
     'linux-cultist/venv-selector.nvim',
     dependencies = {
       'neovim/nvim-lspconfig',
