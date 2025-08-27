@@ -930,6 +930,15 @@ require('lazy').setup({
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+
+      -- Move selection in any direction with Alt+hjkl
+      require('mini.move').setup()
+
+      -- Text edit operators (e.g. `gm` to duplicate text)
+      require('mini.operators').setup()
+
+      -- Split and join arguments (e.g. `gS` to toggle between single line or multiple lines)
+      require('mini.splitjoin').setup()
     end,
   },
   { -- Highlight, edit, and navigate code
