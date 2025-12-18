@@ -21,4 +21,10 @@ return {
       -- Your settings go here
     },
   },
+  { -- Plugin to preview Markdown files
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    ft = { 'markdown' },
+    build = ':call mkdp#util#install()',
+  }
 }
